@@ -1,0 +1,21 @@
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#click-move {
+    transition: all 1s;
+    background-color: red;
+}
+
+#follow {
+    background-color: green;
+}
+
+#playground {
+    width: 100vw;
+    height: 100vh;
+}
