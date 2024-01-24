@@ -1,33 +1,56 @@
 let para2 = document.querySelector('#para2');
-para2.style.color = 'blue';
 
+setTimeout(() => {
+  para2.style.color = 'blue';
+},1000);
+
+setTimeout(() => {
 let section2 = document.querySelector('#section2');
-section2.style.border = '2px dotted black';
+  section2.style.border = '2px dotted black';
+},2000);
 
-let sect2Colorful = document.querySelector('#section2 .colorful');
-sect2Colorful.style.backgroundColor = 'orange';
+// let sect2Colorful = document.querySelector('#section2 .colorful');
+let sect2Colorful = document.getElementsByClassName('colorful')[1];
+
+setTimeout(() => {
+  sect2Colorful.style.backgroundColor = 'orange';
+},3000);
 
 let sect1H2 = document.querySelector('#section1 h2');
-sect1H2.style.fontStyle = 'italic';
+// let sect1H2 = document.getElementsByTagName('h2')[1];
+
+setTimeout(() => {
+  sect1H2.style.fontStyle = 'italic';
+},4000);
 
 let pColorful = document.querySelector('p .colorful')
-pColorful.style.display = 'none';
 
-para2.textContent = 'Modified By JS';
-para2.textContent = "Titre modifié";
+setTimeout(() => {
+  pColorful.style.display = 'none';
+},5000);
 
-let a = document.querySelector('a');
-a.href = 'https://www.ecosia.org/';
+setTimeout(() => {
+  para2.textContent = 'Modified By JS';
+},6000);
 
+setTimeout(() => {
+  let a = document.querySelector('a');
+  a.href = 'https://www.lilo.org/';
+},7000);
 // le classList nous permet de manipuler plus facilement
 // les classes css présentes sur l'élément sélectionné
-sect2Colorful.classList.add('big-text');
 
-// le querySelectorAll nous renvoie un tableau d'éléments 
+setTimeout(() => {
+  sect2Colorful.classList.add('big-text');
+},8000);
+// le querySelectorAll nous renvoie un tableau d'éléments
 // correspondants au sélecteur CSS donné
-let paras = document.querySelectorAll('p');
-// il faut donc faire une boucle pour parcourir le tableau
-// et effectuerla modification sur chaque élément de celui ci
-for (let p of paras) {
-    p.style.fontStyle = 'italic';
-} 
+
+setTimeout(() => {
+  let tableauDesParas = document.querySelectorAll('p');
+  // il faut donc faire une boucle pour parcourir le tableau
+  // et effectuerla modification sur chaque élément de celui ci
+  for (let ligne of tableauDesParas) {
+      ligne.style.fontStyle = 'italic';
+  }
+},9000);
