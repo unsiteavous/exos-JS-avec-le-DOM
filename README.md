@@ -10,8 +10,8 @@ Où on va voir comment manipuler le DOM avec Javascript.
 6. Changer le texte de para2 pour "modified by JS".
 7. Changer le href du lien de la section1 pour le faire aller sur https://www.lilo.org/.
 8. Rajouter la classe big-text sur le h2 de la section2.
-9. Bonus : Faire que tous les paragraphes du document soient en italique.
-10. Ajouter des délais avec setTimeout pour faire apparaitre les modification toutes les une seconde.
+9. Bonus 1 : Faire que tous les paragraphes du document soient en italique.
+10. Bonus 2 : Faire en sorte que les modifications arrivent petit à petit, les unes après les autres, avec des setTimeout de 1 seconde.
 
 Les concepts clefs couverts sont :
 - document.querySelector()
