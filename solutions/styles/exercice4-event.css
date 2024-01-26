@@ -13,9 +13,11 @@
 
 #follow {
     background-color: green;
+    cursor: grab;
 }
 
 #playground {
     width: 100vw;
     height: 100vh;
+    cursor: pointer;
 }

@@ -8,8 +8,8 @@ let isMouseClicked = false;
 // en cas de click à un endroit de l'écran
 // le carré rouge se déplace à cet endroit là
 playground.addEventListener("click", (event) => {    
-    let x = event.clientX;
-    let y = event.clientY;
+    let x = event.clientX - 50;
+    let y = event.clientY - 50;
     console.log("Position X : " + x + " & position Y : " + y);
     redSquare.style.top = y + "px";
     redSquare.style.left = x + "px";
@@ -18,8 +18,8 @@ playground.addEventListener("click", (event) => {
 // en cas de click sur le carré vert
 // celui ci se déplace avec la souris
 playground.addEventListener("mousemove", (event) => {   
-    let x = event.clientX;
-    let y = event.clientY;
+    let x = event.clientX - 50;
+    let y = event.clientY - 50;
 
     // seulement si le bouton de la souris est cliqué
     if(isMouseClicked){
@@ -29,13 +29,15 @@ playground.addEventListener("mousemove", (event) => {
 })
 
 // on met le boolean à true si la souris est cliquée
-playground.addEventListener("mousedown", (event) => {
+greenSquare.addEventListener("mousedown", (event) => {
     console.log("mousedown");
     isMouseClicked = true;
+    greenSquare.style.cursor = "grabbing";
 })  
 
 // on met le boolean à false si la souris est relâchée
-playground.addEventListener("mouseup", (event) => {
+greenSquare.addEventListener("mouseup", (event) => {
     console.log("mouseup");
     isMouseClicked = false;
+    greenSquare.style.cursor = "grab";
 })
