@@ -50,7 +50,21 @@ setTimeout(() => {
   let tableauDesParas = document.querySelectorAll('p');
   // il faut donc faire une boucle pour parcourir le tableau
   // et effectuerla modification sur chaque élément de celui ci
-  for (let ligne of tableauDesParas) {
-      ligne.style.fontStyle = 'italic';
+
+  // Manière avec forEach
+  tableauP.forEach(function(ligne) {
+    ligne.style.fontStyle = "italic";
+  })
+
+  // Manière avec for incrémenté
+  for (let i = 0; i < tableauP.length ; i++) {
+    tableauP[i].style.fontStyle = "italic";
   }
+
+  // Manière avec for en lecture de valeur
+  for (let ligne of tableauP){
+    console.log(ligne);
+    ligne.style.fontStyle = "italic";
+  }
+
 },9000);

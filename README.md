@@ -11,6 +11,7 @@ Où on va voir comment manipuler le DOM avec Javascript.
 7. Changer le href du lien de la section1 pour le faire aller sur https://www.lilo.org/.
 8. Rajouter la classe big-text sur le h2 de la section2.
 9. Bonus : Faire que tous les paragraphes du document soient en italique.
+10. Ajouter des délais avec setTimeout pour faire apparaitre les modification toutes les une seconde.
 
 Les concepts clefs couverts sont :
 - document.querySelector()
@@ -19,6 +20,7 @@ Les concepts clefs couverts sont :
 - classList
 - querySelectorAll
 - for
+- setTimeout
 
 ## Exercice 2 : Changer la couleur de fond [html initial](exercices/exercice2-hex-colors.html)
 Première partie de l'exercice, nous voulons changer la couleur du background grâce à un tableau contenant déjà une sélection de couleurs.
