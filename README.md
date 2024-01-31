@@ -48,7 +48,7 @@ Les concepts clefs couverts sont :
 
 ## Exercice 3 : Mettre à jour un compteur [html initial](exercices/exercice3-counter.html)
 Dans le HTML, dans une balise main, créer une div de classe "container", avec à l'intérieur un h1 avec le titre de l'exercice, un span d'id "counter", une div de class "button-container", avec à l'intérieur de celle là un bouton de classe "decrease", un bouton de classe "reset" et un bouton de classe "increase".
-1. Capturer tous les boutons dans une seule variable "btns" ainsi que le compteur dans une autre variable "value".
+1. Capturer tous les boutons dans une seule variable "btns" ainsi que le compteur dans une autre variable "counter".
 2. Créer une variable "count" qui va contenir la valeur actuelle du compteur initialisée à zéro.
 3. Rajouter un EventListener sur chaque bouton grâce à forEach() en vérifiant le style de classe de chaque bouton pour les différencier. 
 4. Faire en sorte que si on a cliqué sur le bouton "decrease" alors on désincrémente le compte, sinon si c'est "increase" alors on incrémente le compte et sinon si c'est "reset" on remet le compteur à zéro.
